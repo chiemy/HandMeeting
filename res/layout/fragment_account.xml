@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F2" >
+
+    <TextView
+        android:id="@+id/textview_account_show"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bar_background"
+        android:gravity="center"
+        android:text="账号"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:id="@+id/scrollview_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textview_account_show" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_head_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/user_info_background" >
+
+                    <ImageView
+                        android:id="@+id/imageview_user_head_account"
+                        android:layout_width="53dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/user_head" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_fans_account"
+                    android:layout_width="93dp"
+                    android:layout_height="60dp"
+                    android:layout_alignRight="@+id/relativelayout_head_account"
+                    android:layout_below="@+id/relativelayout_head_account"
+                    android:background="@drawable/detail_three" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="粉丝"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textview_user_fans_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="28dp"
+                        android:text="123"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_dynamic_account"
+                    android:layout_width="93dp"
+                    android:layout_height="60dp"
+                    android:layout_alignTop="@+id/relativelayout_focus_account"
+                    android:layout_toLeftOf="@+id/relativelayout_focus_account"
+                    android:background="@drawable/detail_one" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="动态"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textview_user_dynamic_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="28dp"
+                        android:text="99"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_focus_account"
+                    android:layout_width="93dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/relativelayout_head_account"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/detail_two" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="关注"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textview_user_focus_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="28dp"
+                        android:text="28"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/button_bind_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/relativelayout_dynamic_account"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bind_account" />
+
+                <Button
+                    android:id="@+id/button_search_and_invite_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/relativelayout_fans_account"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="76dp"
+                    android:background="@drawable/search_and_invite_friends" />
+
+                <Button
+                    android:id="@+id/button_about_handmeeting_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/button_search_and_invite_friends"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/about_handmeeting" />
+
+                <Button
+                    android:id="@+id/button_feedback_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/button_about_handmeeting_account"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_feedback_account" />
+
+                <Button
+                    android:id="@+id/button_logout_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_feedback_account"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/redbutton"
+                    android:text="退出登录"
+                    android:textColor="#FFFFFF" />
+              
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

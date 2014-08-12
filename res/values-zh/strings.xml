@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">掌上会</string>
+    <string name="action_settings">设置</string>
+    <string name="city">城市</string>
+    <string name="search">搜索</string>
+    <string name="all_salon">所有沙龙</string>
+    <string name="all_classroom">所有讲堂</string>
+    <string name="recommand">推荐</string>
+    <string name="select_category">选择分类</string>
+    <color name="white">#FFFFFF</color>
+</resources>
